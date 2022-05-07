@@ -1,28 +1,32 @@
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+/* 路由器对象模块 */
+import Vue from 'vue'
+import VueRouter from 'vue-router';
 
-Vue.use(VueRouter);
+import Order from '../pages/Order/Order.vue'; 
+import MSite from '../pages/MSite/MSite.vue'; 
+import Profile from '../pages/Profile/Profile.vue'; 
+import Search from '../pages/Search/Search.vue'; 
 
-const routes = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home,
-  },
-  {
-    path: "/about",
-    name: "About",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue"),
-  },
-];
+Vue.use(VueRouter)
 
-const router = new VueRouter({
-  routes,
-});
-
-export default router;
+export default new VueRouter({
+  //所有路由
+  routes: [
+    {
+      path:'/msite',
+      component:MSite
+    },
+    {
+      path:'/order',
+      component:Order
+    },
+    {
+      path:'/profile',
+      component:Profile
+    },
+    {
+      path:'/search',
+      component:Search
+    }
+  ]
+})

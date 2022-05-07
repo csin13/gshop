@@ -1,0 +1,19 @@
+@green = #02a774;
+@yellow = #F5A100;
+@bc = #e4e4e4;
+
+/* 一像素下边框 */
+bottom-border-1px{
+  position: relative;
+  border:none;
+  ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: @color;
+    transform: scaleY(0.5);
+  }
+}
