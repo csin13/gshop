@@ -62,7 +62,6 @@ export default {
     flex: 1;
     display: flex;
     justify-content: center;
-    text-decoration: none;
     text-align: center;
     color: #999999;
     span {

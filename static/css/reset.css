@@ -46,7 +46,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+a{
+	text-decoration: none;
+	color: #000;
+}
+/* 清除浮动 */
+.clearfloat{
+	
+}
 /* 显示省略号 */
 .ellipsis{
   overflow: hidden;
