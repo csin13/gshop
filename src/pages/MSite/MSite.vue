@@ -15,7 +15,7 @@
 
 <script>
 import HeaderTop from "../../components/HeaderTop/HeaderTop.vue";
-import MSiteSwiper from "./MSiteSwiper.vue";
+import MSiteSwiper from "../../components/MSiteSwiper/MSiteSwiper.vue";
 export default {
   data() {
     return {
